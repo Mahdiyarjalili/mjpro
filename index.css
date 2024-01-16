@@ -1,0 +1,119 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    //font-size: 1vw;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    //font-size: 2vw;
+}
+.nav
+{
+    background-color: #3a3a3a; 
+    padding: 3vw; 
+    text-align: center; 
+    height: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+nav a
+{
+    color: rgb(116, 116, 116); 
+    text-decoration: none; 
+    margin:3vw ;
+    text-align: center;
+    
+    font-size: 2vw; 
+    opacity: .85;
+    transition: 1s ;
+    font-family:'Cinzel-SemiBold', sans-serif;
+}
+nav a:hover
+{
+    font-size: 2.18vw; 
+    color: rgb(255, 255, 255); 
+    opacity: 1;
+    text-shadow: 4px 4px 40px rgb(255, 255, 255);
+}
+@font-face {
+    font-family: 'Cinzel-SemiBold';
+    src: url('Fonts/Cinzel-SemiBold.ttf') format('truetype');
+         
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight: normal;
+    font-style: normal;
+}
+.background {
+    background-image: url(Bilder/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.logo
+{
+    max-width: 200px;
+    margin: 16vw auto;
+    height: auto;
+    display: block;
+    text-align: center;
+    opacity: .5;
+    transition: 1s;
+}
+.logo:hover
+{
+    
+    height: auto;
+    display: block;
+    text-align: center;
+    opacity: 1;
+    
+}
+body
+{
+    overflow: hidden; /* Verhindert vertikales Scrollen am Körper */
+    font-size: 1vw; /* Standard-Textgröße */
+
+    
+}
+@media screen and (max-width: 1100px) {
+    body {
+      font-size: 14px; /* Textgröße, wenn Bildschirmbreite kleiner als 600px ist */
+      .nav
+      {
+          background-color: #3a3a3a; 
+          padding: 2vw; 
+          text-align: center; 
+          height: 1vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       }
+      nav a
+      {
+          color: rgb(116, 116, 116); 
+          text-decoration: none; 
+          margin:2vw ;
+          text-align: center;
+          
+          font-size: 3vw; 
+          opacity: .85;
+          transition: 1s ;
+          font-family:'Cinzel-SemiBold', sans-serif;
+      }
+      nav a:hover
+{
+    font-size: 2.18vw; 
+    color: rgb(255, 255, 255); 
+    opacity: 1;
+    text-shadow: 4px 4px 40px rgb(255, 255, 255);
+}
+    }
+
+/* Verstecke den Scrollbalken in Webkit-basierten Browsern (z.B. Chrome, Safari) */
+body::-webkit-scrollbar {
+    display: none;
+}
+.text
+{
+
+}
