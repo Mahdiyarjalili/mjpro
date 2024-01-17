@@ -10,9 +10,24 @@
           window.location.href = 'index_mobile.html';
         }
       </script>-->
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
-<div class="fade-in">
+<!--<div class="fade-in">-->
 <body background="Bilder/Ergebnis.jpg" class="background">
+
+    <div id="prog" style=" left:0px; bottom:0px; position: fixed; width: 100%; background-color: #ffffff; z-index: 99999; height: 100%; overflow: hidden;"> 
+        <img style="  width:20vhw;
+        text-align: center;
+        left: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 35vh;
+    display: block;
+        "  src="PreLoad.gif" alt="Ein animiertes GIF"> </div>
+
+    
+
         <nav class="nav">
         <a href="https://www.instagram.com/">Startseite</a>
         <a href="#">Über uns</a>
@@ -70,7 +85,8 @@
     <h1 >Herzlich willkommen auf meine Website </h1>
     <h3 >Wie werden hier uns unterhalten </h3>
     <h3 >Ich freue mich auf deinen Besuch </h3>
-    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script>
         const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
         let isScrolling = false;
@@ -112,9 +128,19 @@
           document.querySelector('.fade-in').classList.add('active');
         });
       </script>
-    
+     <script>
+        $(window).on('load', function() {
+          // Verzögerung in Millisekunden (z.B. 3000 für 3 Sekunden)
+          var verzögerung = 1000;
+      
+          // Verzögerung und Fade Out hinzufügen
+          setTimeout(function() {
+            $("#prog").fadeOut();
+          }, verzögerung);
+        });
+      </script>
 
-    
+          
 </body>
-</div>
-</html>a
+
+</html>
