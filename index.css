@@ -129,9 +129,9 @@ body
 @media screen and (max-width: 1100px) {
     body {
       font-size: 1.5vw; 
-      
+    }
       .nav
-      {}
+      {
         background-color: #383838da; 
         padding: .5vw; 
         text-align: center; 
@@ -170,13 +170,6 @@ body
     margin-top: 37vh;
     margin-bottom: 50vh;
     display: block;
-
-   /* width: 130px;
-    margin-top:38vh;
-    margin-bottom: 37vh;
-    margin-left:36vw;
-    opacity: .5;
-    transition: 1s; */
 
 }
  
