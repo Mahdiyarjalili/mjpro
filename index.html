@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="aboutUs.css">
     <title>MJ Production</title>
     <!--<script>
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -50,13 +49,9 @@
 
     <h4 id="aboutus" >See you later </h1>
     
-    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-
-
-
-
-      <!--<script>
+    <script>
         const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
         let isScrolling = false;
 
@@ -90,72 +85,7 @@
             // Verhindere das natürliche Scrollen
             event.preventDefault();
         });
-    </script> -->
-
-
-
-
-   <!-- <script>
-      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-      // Überprüfen Sie, ob es sich um ein mobiles Gerät handelt
-      if (isMobile) {
-          // Keine spezielle Scrolllogik für mobile Geräte erforderlich
-      } else {
-          const scrollAmountPercentage = 100;
-
-          window.addEventListener('wheel', function (event) {
-              // Ihre vorhandene Scrolllogik unter Verwendung von scrollAmountPercentage
-              // ...
-
-              // Verhindern Sie das natürliche Scrollen
-              event.preventDefault();
-          });
-      }
-  </script> -->
-
-
-  <script>
-    const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
-    let isScrolling = false;
-
-    // Überprüfe, ob es sich nicht um ein mobiles Gerät handelt
-    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        window.addEventListener('wheel', function(event) {
-            if (!isScrolling) {
-                isScrolling = true;
-
-                // Berechne die neue Scrollposition
-                const currentScroll = window.scrollY;
-                const scrollAmount = (window.innerHeight / 100) * scrollAmountPercentage;
-                let targetScroll;
-
-                if (event.deltaY > 0) {
-                    targetScroll = Math.min(currentScroll + scrollAmount, document.body.clientHeight - window.innerHeight);
-                } else {
-                    targetScroll = Math.max(currentScroll - scrollAmount, 0);
-                }
-
-                // Scrolle zur neuen Position mit Smooth-Transition
-                window.scrollTo({
-                    top: targetScroll,
-                    behavior: 'smooth'
-                });
-
-                // Setze Timeout, um das erneute Scrollen zu ermöglichen
-                setTimeout(() => {
-                    isScrolling = false;
-                }, 1000); // Wartezeit in Millisekunden
-            }
-        });
-    }
-</script>
-
-
-
-
-
-
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
           // Fügen Sie die Klasse 'active' hinzu, um den Fade-Effekt auszulösen

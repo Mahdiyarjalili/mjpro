@@ -1,0 +1,225 @@
+h1{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 120px;
+    text-align: center;
+    display: block; 
+}
+h2{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 70px;
+    margin: 0 10vw;
+    text-align: center;
+    display: block; 
+    
+}
+h3{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 50px;
+    text-align: center;
+    display: block; 
+    
+}
+h4{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 50px;
+    text-align: center;
+    display: block; 
+    padding-bottom: 50vh;
+    
+}
+.nav
+{
+    
+    background-color: #383838da; 
+    padding: 0px; 
+    text-align: center; 
+    height: 6vh;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Setze den äußeren Rand auf 0 */
+    position: fixed; /* Fixiere die Navigationsleiste oben auf dem Bildschirm */
+    top: 0; /* Abstand vom oberen Rand des Bildschirms auf 0 setzen */
+    width: 100%; 
+    z-index: 1000;
+    
+ }
+nav a
+{
+    color: rgb(170, 169, 169); 
+    text-decoration: none; 
+    margin:1vw ;
+    text-align: center;
+    
+    font-size: 1.25vw; 
+    opacity: .85;
+    transition: 1s ;
+    font-family:'Cinzel-SemiBold', sans-serif;
+    z-index: 1000;
+}
+nav a:hover
+{
+    font-size: 1.4vw; 
+    color: rgb(214, 212, 212); 
+    opacity: 1;
+    text-shadow: 4px 4px 40px rgb(61, 61, 61);
+}
+@font-face {
+    font-family: 'Cinzel-SemiBold'; 
+    src: url('Fonts/Cinzel-SemiBold.ttf') format('truetype');
+         
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Hairline'; 
+    src: url('Fonts/Lato-Hairline.ttf') format('truetype');
+         
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight:100;
+    font-style: normal;
+}
+.background {
+    background-image: url(Bilder/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo
+{
+    
+    width:8vw;
+    margin: auto;
+    margin-top:38vh;
+    margin-bottom: 44vh;
+    display: block;
+
+    /*margin-left:47vw;*/
+    opacity: .5;
+    transition: 1s;
+
+}
+.logo:hover
+{
+    height: auto;
+    display: block;
+    text-align: center;
+    opacity: 1;
+    
+}
+body
+{
+    overflow:auto;
+    
+    font-size: 1vw; 
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+.fade-in.active {
+    opacity: 1;
+  }
+@media screen and (max-width: 1100px) {
+    body {
+      font-size: 1.5vw; 
+      
+      .nav
+      
+        background-color: #383838da; 
+        padding: .5vw; 
+        text-align: center; 
+        height: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+       }
+      nav a
+      {
+        color: rgb(170, 169, 169);  
+          text-decoration: none; 
+          margin:1vw ;
+          text-align: center;
+          
+          font-size: 2.8vw; 
+          opacity: .85;
+          transition: 1s ;
+          font-family:'Cinzel-SemiBold', sans-serif;
+          z-index: 1000;
+      }
+      nav a:hover
+{
+    font-size: 3vw; 
+    color: rgb(214, 212, 212); 
+    opacity: 1;
+    text-shadow: 4px 4px 40px rgb(61, 61, 61);
+}
+.logo
+{
+    width:130px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 37vh;
+    margin-bottom: 50vh;
+    display: block;
+
+   /* width: 130px;
+    margin-top:38vh;
+    margin-bottom: 37vh;
+    margin-left:36vw;
+    opacity: .5;
+    transition: 1s; */
+
+}
+ 
+body::-webkit-scrollbar {
+    display: none;
+    background-color:#38383800
+}
+h1{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 4vw;
+    text-align: center;
+    display: block; 
+}
+h2{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    margin: 0 10vw;
+    font-size: 35px;
+    text-align: center;
+    display: block; 
+    
+}
+h3{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 30px;
+    text-align: center;
+    display: block; 
+    
+}
+h4{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 4vw;
+    text-align: center;
+    display: block; 
+    padding-bottom: 70vh;
+    
+}
+    }
+    body::-webkit-scrollbar {
+        display: none;
+        background-color:#38383800
+    }
