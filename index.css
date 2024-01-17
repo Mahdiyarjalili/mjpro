@@ -8,32 +8,33 @@ h3{
 }
 .nav
 {
-    background-color: #3a3a3a; 
-    padding: 3vw; 
+    background-color: #08ff5a00; 
+    padding: 0px; 
     text-align: center; 
-    height: 1vw;
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: -10px;
  }
 nav a
 {
-    color: rgb(116, 116, 116); 
+    color: rgb(73, 73, 73); 
     text-decoration: none; 
-    margin:3vw ;
+    margin:1vw ;
     text-align: center;
     
-    font-size: 2vw; 
+    font-size: 1.25vw; 
     opacity: .85;
     transition: 1s ;
     font-family:'Cinzel-SemiBold', sans-serif;
 }
 nav a:hover
 {
-    font-size: 2.18vw; 
-    color: rgb(255, 255, 255); 
+    font-size: 1.4vw; 
+    color: rgb(0, 0, 0); 
     opacity: 1;
-    text-shadow: 4px 4px 40px rgb(255, 255, 255);
+    text-shadow: 4px 4px 40px rgb(61, 61, 61);
 }
 @font-face {
     font-family: 'Cinzel-SemiBold';
@@ -49,15 +50,17 @@ nav a:hover
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .logo
 {
-    max-width: 200px;
-    margin: 16vw auto;
-    height: auto;
-    display: block;
-    text-align: center;
+    
+    width:150px;
+    margin-top:38vh;
+    margin-bottom: 44vh;
+    margin-left:47vw;
     opacity: .5;
     transition: 1s;
+
 }
 .logo:hover
 {
@@ -70,46 +73,64 @@ nav a:hover
 }
 body
 {
-    overflow: hidden; /* Verhindert vertikales Scrollen am Körper */
-    font-size: 1vw; /* Standard-Textgröße */
+    overflow: hidden; 
+    font-size: 1vw; 
 
     
 }
 @media screen and (max-width: 1100px) {
     body {
-      font-size: 14px; /* Textgröße, wenn Bildschirmbreite kleiner als 600px ist */
+      font-size: 1.5vw; 
+      
       .nav
       {
-          background-color: #3a3a3a; 
-          padding: 2vw; 
-          text-align: center; 
-          height: 1vw;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        background-color: #ff000000; 
+        padding: .5vw; 
+        text-align: center; 
+        height: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
        }
       nav a
       {
           color: rgb(116, 116, 116); 
           text-decoration: none; 
-          margin:2vw ;
+          margin:1vw ;
           text-align: center;
           
-          font-size: 3vw; 
+          font-size: 2.8vw; 
           opacity: .85;
           transition: 1s ;
           font-family:'Cinzel-SemiBold', sans-serif;
       }
       nav a:hover
 {
-    font-size: 2.18vw; 
-    color: rgb(255, 255, 255); 
+    font-size: 3vw; 
+    color: rgb(0, 0, 0); 
     opacity: 1;
-    text-shadow: 4px 4px 40px rgb(255, 255, 255);
+    text-shadow: 4px 4px 40px rgb(61, 61, 61);
 }
+.logo
+{
+    
+    width: 130px;
+    // max-height: 50vh; /* Du kannst die Höhe nach Bedarf anpassen */
+    margin-top:38vh;
+    margin-bottom: 37vh;
+    margin-left:36vw;
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+    //text-align: center;
+    opacity: .5;
+    transition: 1s;
+
+}
+
     }
 
-/* Verstecke den Scrollbalken in Webkit-basierten Browsern (z.B. Chrome, Safari) */
+    
 body::-webkit-scrollbar {
     display: none;
 }

@@ -21,7 +21,7 @@
     <img src="Bilder/Logo.png" class="logo" >
     <a href="https://google.com">
     <br>
-    <h1 >Git is installed </h1>
+    <h1 >Wirklich</h1>
     <h3>Mahdiyar werden hier uns unterhalten </h3>
     <h1>Ich freue mich auf deinen Besuch </h3>
     <h3 >Herzlich willkommen auf meine Website </h1>
@@ -40,31 +40,69 @@
     <h3 >Wie werden hier uns unterhalten </h3>
     <h3 >Ich freue mich auf deinen Besuch </h3>
     <h1 >Herzlich willkommen auf meine Website </h1>
+    <h3 >Wie werden hier uns unterhلalten </h3>
+    <h3>Ich freue mich auf deinen Besuch </h3>
+    <h1 >Herzlich willkommen auf meine Website </h1>
     <h3 >Wie werden hier uns unterhalten </h3>
+    <h3 >Ich freue mich auf deinen Besuch </h3>
+    <h1 >Wirklich</h1>
+    <h3>Mahdiyar werden hier uns unterhalten </h3>
+    <h1>Ich freue mich auf deinen Besuch </h3>
+    <h3 >Herzlich willkommen auf meine Website </h1>
+    <h1 >Wie werden hier uns unterhalten </h3>
+    <h3 >Ich freue mich auf deinen Besuch </h3>
+    <h1 >Herzlich willkommen auf meine Website </h1>
+    <h3 >Wie werden hier uns unterhalten </h3>
+    <h3 >Ich freue mich auf deinen Besuch </h3>
+    <h1 >Herzlich willkommen auf meine Website </h1>
+    <h3 >Wie werden hier uns unterhalten </h3>
+    <h3 >Ich freue mich auf deinen Besuch </h3>
+    <h1 >Herzlich willkommen auf meine Website </h1>
+    <h3 >Wie werden hier uns unterhalten </h3>
+    <h3 >Ich freue mich auf deinen Besuch </h3>
+    <h1 >Herzlich willkommen auf meine Website </h1>
+    <h3 >Wie werden hier uns unterhalten </h3>
+    <h3 >Ich freue mich auf deinen Besuch </h3>
+    <h1 >Herzlich willkommen auf meine Website </h1>
+    <h3 >Wie werden hier uns unterhلalten </h3>
     <h3>Ich freue mich auf deinen Besuch </h3>
     <h1 >Herzlich willkommen auf meine Website </h1>
     <h3 >Wie werden hier uns unterhalten </h3>
     <h3 >Ich freue mich auf deinen Besuch </h3>
     
     <script>
-        const scrollAmount = 1200; // Ändere dies auf die gewünschte Anzahl von Pixeln
+        const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
+        let isScrolling = false;
 
         window.addEventListener('wheel', function(event) {
-            event.preventDefault(); // Verhindere das natürliche Scrollen
+            if (!isScrolling) {
+                isScrolling = true;
 
-            if (event.deltaY > 0) {
-                // Scroll nach unten
-                window.scrollBy({
-                    top: scrollAmount,
-                    behavior: 'smooth' // Füge die Smooth-Transition hinzu
+                // Berechne die neue Scrollposition
+                const currentScroll = window.scrollY;
+                const scrollAmount = (window.innerHeight / 100) * scrollAmountPercentage;
+                let targetScroll;
+
+                if (event.deltaY > 0) {
+                    targetScroll = Math.min(currentScroll + scrollAmount, document.body.clientHeight - window.innerHeight);
+                } else {
+                    targetScroll = Math.max(currentScroll - scrollAmount, 0);
+                }
+
+                // Scrolle zur neuen Position mit Smooth-Transition
+                window.scrollTo({
+                    top: targetScroll,
+                    behavior: 'smooth'
                 });
-            } else {
-                // Scroll nach oben
-                window.scrollBy({
-                    top: -scrollAmount,
-                    behavior: 'smooth' // Füge die Smooth-Transition hinzu
-                });
+
+                // Setze Timeout, um das erneute Scrollen zu ermöglichen
+                setTimeout(() => {
+                    isScrolling = false;
+                }, 1000); // Wartezeit in Millisekunden
             }
+
+            // Verhindere das natürliche Scrollen
+            event.preventDefault();
         });
     </script>
     
