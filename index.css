@@ -117,7 +117,7 @@ nav a:hover
 body
 {
     overflow:hidden;
-        font-size: 1vw; 
+    font-size: 1vw; 
 }
 .fade-in {
     opacity: 0;
@@ -126,7 +126,7 @@ body
 .fade-in.active {
     opacity: 1;
   }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     body {
       font-size: 1.5vw; 
     }
@@ -173,10 +173,7 @@ body
 
 }
  
-body::-webkit-scrollbar {
-    display: none;
-    background-color:#38383800
-}
+
 h1{
     font-family:Lato-Hairline ; font-weight:600;
     opacity: .8;
@@ -209,5 +206,15 @@ h4{
     display: block; 
     padding-bottom: 70vh;
     
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    background-color:#38383800
+}
+body
+{
+    overflow:auto;
+        font-size: 1vw; 
 }
 }

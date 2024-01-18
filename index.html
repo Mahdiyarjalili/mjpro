@@ -7,14 +7,55 @@
     <title>MJ Production</title>
     <script>
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-          window.location.href = 'index_mobile.html';
+        }
+        else{
+          const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
+        let isScrolling = false;
+
+        window.addEventListener('wheel', function(event) {
+            if (!isScrolling) {
+                isScrolling = true;
+
+                // Berechne die neue Scrollposition
+                const currentScroll = window.scrollY;
+                const scrollAmount = (window.innerHeight / 100) * scrollAmountPercentage;
+                let targetScroll;
+
+                if (event.deltaY > 0) {
+                    targetScroll = Math.min(currentScroll + scrollAmount, document.body.clientHeight - window.innerHeight);
+                } else {
+                    targetScroll = Math.max(currentScroll - scrollAmount, 0);
+                }
+
+                // Scrolle zur neuen Position mit Smooth-Transition
+                window.scrollTo({
+                    top: targetScroll,
+                    behavior: 'smooth'
+                });
+
+                // Setze Timeout, um das erneute Scrollen zu ermöglichen
+                setTimeout(() => {
+                    isScrolling = false;
+                }, 1000); // Wartezeit in Millisekunden
+            }
+
+            // Verhindere das natürliche Scrollen
+            event.preventDefault();
+        });
         }
       </script>
       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
+
+
+
+
+      
+
 </head>
 <!--<div class="fade-in">-->
 <body background="Bilder/Ergebnis.jpg" class="background">
+  
 
     <div id="prog" style=" left:0px; bottom:0px; position: fixed; width: 100%; background-color: #ffffff; z-index: 99999; height: 100%; overflow: hidden;"> 
         <img style="  
@@ -50,8 +91,9 @@
     <h4 id="aboutus" >See you later </h1>
     
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <script>
+    
+    
+    <!--<script>
         const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
         let isScrolling = false;
 
@@ -85,7 +127,7 @@
             // Verhindere das natürliche Scrollen
             event.preventDefault();
         });
-    </script>
+    </script>-->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
           // Fügen Sie die Klasse 'active' hinzu, um den Fade-Effekt auszulösen
@@ -104,7 +146,25 @@
         });
       </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           
 </body>
 
 </html>
+
