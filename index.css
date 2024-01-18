@@ -145,7 +145,7 @@ body
       {
         color: rgb(170, 169, 169);  
           text-decoration: none; 
-          margin:1vw ;
+          margin:3vw ;
           text-align: center;
           
           font-size: 2.8vw; 
@@ -177,7 +177,7 @@ body
 h1{
     font-family:Lato-Hairline ; font-weight:600;
     opacity: .8;
-    font-size: 4vw;
+    font-size: 10vw;
     text-align: center;
     display: block; 
 }
