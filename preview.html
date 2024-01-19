@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanftes Scrollen mit Transition</title>
+    <style>
+        body {
+            height: 200vh; /* Erzeugt genügend Platz zum Scrollen */
+            scroll-behavior: smooth; /* Fügt einen sanften Übergang hinzu */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollStep = 10;
+
+            window.addEventListener('wheel', function (e) {
+                e.preventDefault();
+                // Scrollen mit Übergangseffekt durch Animieren des ScrollTop-Werts
+                window.scrollTo({
+                    top: window.scrollY + e.deltaY * scrollStep,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Hier kommt der Inhalt der Webseite -->
+</body>
+</html>
