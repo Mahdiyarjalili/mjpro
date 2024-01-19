@@ -145,7 +145,7 @@ body
 .fade-in.active {
     opacity: 1;
   }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
  .nav
       {
         background-color: #383838da; 

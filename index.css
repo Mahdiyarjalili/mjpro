@@ -126,7 +126,7 @@ body
 .fade-in.active {
     opacity: 1;
   }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     body {
       font-size: 1.5vw; 
     }
