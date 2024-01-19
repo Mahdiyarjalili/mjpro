@@ -28,8 +28,15 @@ h4{
     font-size: 50px;
     text-align: center;
     display: block; 
-    padding-bottom: 50vh;
+    padding-bottom:35vh;
     
+}
+h5{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 7em;
+    text-align: center;
+    display: block; 
 }
 .nav
 {
@@ -185,10 +192,11 @@ h1{
     margin-top: 10vh;
 }
 h2{
-    font-family:Lato-Hairline ; font-weight:600;
+    font-family:Lato-Hairline ;
+     font-weight:600;
     opacity: .8;
     margin: 0 10vw;
-    font-size: 35px;
+    font-size: 28px;
     text-align: center;
     display: block; 
     
@@ -207,8 +215,16 @@ h4{
     font-size: 4vw;
     text-align: center;
     display: block; 
-    padding-bottom: 70vh;
+    padding-bottom: 60vh;
     
+}
+h5{
+    font-family:Lato-Hairline ; 
+    opacity: .8;
+    font-size: 10vw;
+    text-align: center;
+    display: block; 
+    margin-top: 5vh;
 }
 
 body::-webkit-scrollbar {

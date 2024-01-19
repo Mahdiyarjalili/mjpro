@@ -165,6 +165,7 @@ body
      }
      .logoMedienLinks
      {
+        color: #414141ee;
         text-decoration: none;
          align-items: center;
          
@@ -272,11 +273,14 @@ font-family:Lato-Hairline ; font-weight:600;
 }
 .gruß
 {
-    text-align: center;
+    
      font-family:Lato-Hairline ;
      font-size: 4em ;
      font-weight:600;
-      line-height: 1.4em
+      line-height: 1em;
+      
+      
+    
 }
 
 h3{
@@ -309,17 +313,17 @@ body
     display:block;
     justify-content: center;
     align-items: center;
-     
+         
      }
      
      .logoMedienPic
      {
-        width: 45vw;
+        width: 25vw;
         transition: 1s ;
      }
      .logoMedienPic:hover
      {
-        width: 50vw;
+        width: 30vw;
      }
      .logoMedienLinks
      {
