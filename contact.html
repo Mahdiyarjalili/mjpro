@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>MJ Production</title>
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        }
+        else{
+          const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
+        let isScrolling = false;
+
+        window.addEventListener('wheel', function(event) {
+            if (!isScrolling) {
+                isScrolling = true;
+
+                // Berechne die neue Scrollposition
+                const currentScroll = window.scrollY;
+                const scrollAmount = (window.innerHeight / 100) * scrollAmountPercentage;
+                let targetScroll;
+
+                if (event.deltaY > 0) {
+                    targetScroll = Math.min(currentScroll + scrollAmount, document.body.clientHeight - window.innerHeight);
+                } else {
+                    targetScroll = Math.max(currentScroll - scrollAmount, 0);
+                }
+
+                // Scrolle zur neuen Position mit Smooth-Transition
+                window.scrollTo({
+                    top: targetScroll,
+                    behavior: 'smooth'
+                });
+
+                // Setze Timeout, um das erneute Scrollen zu ermöglichen
+                setTimeout(() => {
+                    isScrolling = false;
+                }, 1000); // Wartezeit in Millisekunden
+            }
+
+            // Verhindere das natürliche Scrollen
+            event.preventDefault();
+        });
+        }
+      </script>
+      
+
+
+      <style>
+        body {
+            height:300vh; /* Erzeugt genügend Platz zum Scrollen */
+                    }
+    </style>
+
+</head>
+<!--<div class="fade-in">-->
+<body background="Bilder/Ergebnis.jpg" class="background">
+  
+
+    <div id="prog" style=" left:0px; bottom:0px; position: fixed; width: 100%; background-color: #ffffff; z-index: 99999; height: 100%; overflow: hidden;"> 
+        <img style="  
+    width:20vhw;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 35vh;
+    display: block;
+        "  src="PreLoad.gif" alt="Ein animiertes GIF"> </div>
+
+    
+
+        <nav class="nav">
+        <a href="index.html">home page</a>
+        <a href="aboutUs.html">about us</a>
+        <a href="projects.html">projects</a>
+        <a href="mailto:jalilimahdiyar@gmail.com">contact</a>
+    </nav>
+    <img src="Bilder/Logo.png" class="logo" >
+    <a href="https://google.com"></a>
+    <br>
+    <br>
+
+   
+    <h1>MJ Production </h1>
+
+      <h2>contact</h2>
+
+      
+      
+
+    <p class="absatz"> <br>If you have any questions or opinions, you can click Contact Us and
+       reach out to us</p>
+
+    <p class="absatz">We warmly welcome your ideas and opinions </p>
+    <p class="absatz">Below you can see our contact details </p><br>
+    
+    
+
+    <p class="absatz" style="margin-top: 30vh;"><br>You can reach us in different ways.<br>
+      
+      <br><br> 
+
+<div class="contactContainer" >
+
+
+
+      <div class="medienContainer">
+        <div class="logo-container">
+          <img src="Bilder/Instagram.png" alt="Logo" class="logoMedienPic">
+        </div>
+        <a href="https://www.instagram.com/mj.apps/" class="logoMedienLinks">MJ Production Instagram</a>
+      </div>
+
+
+      <div class="medienContainer">
+        <div class="logo-container">
+          <img src="Bilder/Instagram.png" alt="Logo" class="logoMedienPic">
+        </div>
+        <a href="https://www.instagram.com/jemahdiyar/" class="logoMedienLinks">Mahdiyar Jalili</a>
+      </div>
+
+      <div class="medienContainer">
+        <div class="logo-container">
+          <img src="Bilder/Telegram.png" alt="Logo" class="logoMedienPic">
+        </div>
+        <a href="https://telegram.me/mahdiyarjalili" class="logoMedienLinks">Mahdiyar Jalili</a>
+      </div>
+
+      <div class="medienContainer">
+        
+        <a href="https://wa.me/+4917642989531" class="logoMedienLinks">
+          <div class="logo-container">
+            <img src="Bilder/Whatsapp.png" alt="Logo" class="logoMedienPic">
+          </div>
+          Whatsapp MJ</a>
+      </div>
+
+
+      <div class="medienContainer">
+        <div class="logo-container">
+          <img src="Bilder/Instagram.png" alt="Logo" class="logoMedienPic">
+        </div>
+        <a href="https://www.instagram.com/mj.apps/" class="logoMedienLinks">MJ Production Instagram</a>
+      </div>
+
+      <div class="medienContainer">
+        <div class="logo-container">
+          <img src="Bilder/Instagram.png" alt="Logo" class="logoMedienPic">
+        </div>
+        <a href="https://www.instagram.com/mj.apps/" class="logoMedienLinks">MJ Production Instagram</a>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <br><br> <p class="gruß">Best regards<br><br> MJ Production</p>
+   
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Fügen Sie die Klasse 'active' hinzu, um den Fade-Effekt auszulösen
+          document.querySelector('.fade-in').classList.add('active');
+        });
+      </script>
+     <script>
+        $(window).on('load', function() {
+          // Verzögerung in Millisekunden (z.B. 3000 für 3 Sekunden)
+          var verzögerung = 1000;
+      
+          // Verzögerung und Fade Out hinzufügen
+          setTimeout(function() {
+            $("#prog").fadeOut();
+          }, verzögerung);
+        });
+      </script>
+</body>
+
+</html>
+
+
