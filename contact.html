@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="contact.css">
     <title>MJ Production</title>
     <script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)||(window.innerWidth<1200)) {
         }
         else{
           const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
@@ -93,13 +93,13 @@
        reach out to us</p>
 
     <p class="absatz">We warmly welcome your ideas and opinions </p>
-    <p class="absatz">Below you can see our contact details </p><br>
+    <p class="absatz" style="padding-bottom: 20vh;">Below you can see our contact details </p><br>
     
-    
+    <br><br>
 
-    <p class="absatz" style="margin-top: 30vh;"><br>You can reach us in different ways.<br>
+    <p class="absatz" style="padding-top: 10vh; "><br>You can reach us in different ways.<br>
       
-      <br><br> 
+    
 
 <div class="contactContainer" >
 
@@ -170,7 +170,7 @@
 
 
 
-    <br><br> <p class="gruß" style="padding-bottom: 20vh;">Best regards<br><br> MJ Production</p>
+    <br><br> <p class="gruß">Best regards<br><br> MJ Production</p>
    
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     

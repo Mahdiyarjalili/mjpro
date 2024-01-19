@@ -4,7 +4,7 @@ h1{
     font-size: 5em;
     text-align: center;
     display: block; 
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 h2{
     font-family:Lato-Hairline ; 
@@ -32,7 +32,11 @@ h2{
      font-family:Lato-Hairline ;
      font-size: 2em ;
      font-weight:600;
-      line-height: 1.4em
+      line-height: 1em;
+      padding-bottom: 20vh;
+      position: sticky;
+      top: 70%;
+      left: 50%;
 }
 h3{
     font-family:Lato-Hairline ; font-weight:600;
@@ -148,9 +152,16 @@ body
   }
   .contactContainer
 {
-    display: flex;
+    position:sticky;
+    display:flex;
     justify-content: center;
     align-items: center;
+    top: 40%;
+  left: 50%;
+  bottom: 60%;
+  left: 50%;
+     
+    
      
      }
      
@@ -280,6 +291,7 @@ font-family:Lato-Hairline ; font-weight:600;
       line-height: 1em;
       
       
+      
     
 }
 
@@ -329,7 +341,8 @@ body
      {
         text-decoration: none;
          align-items: center;
-         font-family:'Cinzel-SemiBold', sans-serif;
+         font-family:Lato-Hairline ;
+         font-weight:900;
          font-size: 5em;
          color: #414141ee;
      }

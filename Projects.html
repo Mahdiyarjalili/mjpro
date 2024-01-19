@@ -4,55 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="projects.css">
+    <link rel="shortcut icon" href="Icon.ico" />
+
     <title>MJ Production</title>
-    <!--<script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-          window.location.href = 'index_mobile.html';
-        }
-      </script>-->
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-</head>
-<!--<div class="fade-in">-->
-<body background="Bilder/Ergebnis.jpg" class="background">
-
-    <div id="prog" style=" left:0px; bottom:0px; position: fixed; width: 100%; background-color: #ffffff; z-index: 99999; height: 100%; overflow: hidden;"> 
-        <img style="  
-    width:20vhw;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    margin-top: 35vh;
-    display: block;
-        "  src="PreLoad.gif" alt="Ein animiertes GIF"> </div>
-
-    
-
-        <nav class="nav">
-        <a href="https://www.instagram.com/">home page</a>
-        <a href="#aboutus">about us</a>
-        <a href="projects.html">projects</a>
-        <a href="mailto:jalilimahdiyar@gmail.com">contact</a>
-    </nav>
-    <img src="Bilder/Logo.png" class="logo" >
-    <a href="https://google.com"></a>
-    <br>
-    <br>
-    <h1>
-      MJ Production projects </h1>
-      <h2>We present hereby our projects</h2>
-    <h2><br>Our projects within the framework
-       of data protection laws will soon be available for download on this website<h2>
-     <h3><br> <br>If you have any questions or opinions, you can click Contact Us and
-       reach out to us</h3>
-    <h3>We warmly welcome your ideas and opinions </h4>
-
-    <h4 id="aboutus" >See you later </h1>
-    
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
     <script>
-        const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth<1200)) {
+          console.log('salama');
+        }
+        else{
+          
+          const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
         let isScrolling = false;
 
         window.addEventListener('wheel', function(event) {
@@ -85,7 +46,63 @@
             // Verhindere das natürliche Scrollen
             event.preventDefault();
         });
-    </script>
+        }
+      </script>
+      
+
+
+      <style>
+        body {
+            height:300vh; /* Erzeugt genügend Platz zum Scrollen */
+        }
+    </style>
+
+
+      
+
+</head>
+<!--<div class="fade-in">-->
+<body background="Bilder/Ergebnis.jpg" class="background">
+  
+
+    <div id="prog" style=" left:0px; bottom:0px; position: fixed; width: 100%; background-color: #ffffff; z-index: 99999; height: 100%; overflow: hidden;"> 
+        <img style="  
+    width:20vhw;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 35vh;
+    display: block;
+        "  src="PreLoad.gif" alt="Ein animiertes GIF"> </div>
+
+    
+
+        <nav class="nav">
+        <a href="index.html">home page</a>
+        <a href="aboutUs.html">about us</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    <img src="Bilder/Logo.png" class="logo" >
+    <a href="https://google.com"></a>
+    <br>
+    <br>
+
+   
+    <h1>
+      MJ Production </h1>
+      <h2>welcome to our site</h2>
+    <h2><br>Our projects within the framework
+       of data protection laws will soon be available for download on this website<h2>
+     <h3><br> <br>If you have any questions or opinions, you can click Contact Us and
+       reach out to us</h3>
+    <h4>We warmly welcome your ideas and opinions </h4>
+
+    <h5>See you later </h5>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
           // Fügen Sie die Klasse 'active' hinzu, um den Fade-Effekt auszulösen
@@ -103,8 +120,7 @@
           }, verzögerung);
         });
       </script>
-
-          
 </body>
 
 </html>
+

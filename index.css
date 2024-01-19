@@ -63,7 +63,7 @@ nav a
     margin:1vw ;
     text-align: center;
     
-    font-size: 1.25vw; 
+    font-size: 1.3em; 
     opacity: .85;
     transition: 1s ;
     font-family:'Cinzel-SemiBold', sans-serif;
@@ -135,7 +135,7 @@ body
   }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     body {
       font-size: 1.5vw; 
     }
@@ -228,12 +228,14 @@ h5{
 }
 
 body::-webkit-scrollbar {
-    display: none;
-    background-color:#38383800
+    display:flex;
+    background-color: #d3010100
 }
-body
+html, body
 {
     overflow:auto;
         font-size: 1vw; 
 }
+
+
 }

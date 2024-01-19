@@ -1,7 +1,7 @@
 h1{
     font-family:Lato-Hairline ; font-weight:600;
     opacity: .8;
-    font-size: 120px;
+    font-size: 7em;
     text-align: center;
     display: block; 
 }
@@ -28,8 +28,15 @@ h4{
     font-size: 50px;
     text-align: center;
     display: block; 
-    padding-bottom: 50vh;
+    padding-bottom:35vh;
     
+}
+h5{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 7em;
+    text-align: center;
+    display: block; 
 }
 .nav
 {
@@ -56,7 +63,7 @@ nav a
     margin:1vw ;
     text-align: center;
     
-    font-size: 1.25vw; 
+    font-size: 1.3em; 
     opacity: .85;
     transition: 1s ;
     font-family:'Cinzel-SemiBold', sans-serif;
@@ -116,7 +123,7 @@ nav a:hover
 }
 body
 {
-    overflow: hidden; 
+    overflow:hidden;
     font-size: 1vw; 
 }
 .fade-in {
@@ -126,7 +133,9 @@ body
 .fade-in.active {
     opacity: 1;
   }
-@media screen and (max-width: 1100px) {
+
+
+@media screen and (max-width: 1200px) {
     body {
       font-size: 1.5vw; 
     }
@@ -145,7 +154,7 @@ body
       {
         color: rgb(170, 169, 169);  
           text-decoration: none; 
-          margin:1vw ;
+          margin:3vw ;
           text-align: center;
           
           font-size: 2.8vw; 
@@ -171,30 +180,23 @@ body
     margin-bottom: 50vh;
     display: block;
 
-   /* width: 130px;
-    margin-top:38vh;
-    margin-bottom: 37vh;
-    margin-left:36vw;
-    opacity: .5;
-    transition: 1s; */
-
 }
  
-body::-webkit-scrollbar {
-    display: none;
-}
+
 h1{
     font-family:Lato-Hairline ; font-weight:600;
     opacity: .8;
-    font-size: 80px;
+    font-size: 10vw;
     text-align: center;
     display: block; 
+    margin-top: 10vh;
 }
 h2{
-    font-family:Lato-Hairline ; font-weight:600;
+    font-family:Lato-Hairline ;
+     font-weight:600;
     opacity: .8;
     margin: 0 10vw;
-    font-size: 35px;
+    font-size: 28px;
     text-align: center;
     display: block; 
     
@@ -213,7 +215,27 @@ h4{
     font-size: 4vw;
     text-align: center;
     display: block; 
-    padding-bottom: 70vh;
+    padding-bottom: 60vh;
     
 }
-    }
+h5{
+    font-family:Lato-Hairline ; 
+    opacity: .8;
+    font-size: 10vw;
+    text-align: center;
+    display: block; 
+    margin-top: 5vh;
+}
+
+body::-webkit-scrollbar {
+    display:flex;
+    background-color: #d3010100
+}
+html, body
+{
+    overflow:auto;
+        font-size: 1vw; 
+}
+
+
+}
