@@ -258,4 +258,9 @@ h4{
     padding-bottom: 70vh;
     
 }
+body
+{
+    overflow:auto;
+        font-size: 1vw; 
+}
     }
