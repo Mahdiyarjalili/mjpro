@@ -28,7 +28,7 @@ h4{
     font-size: 50px;
     text-align: center;
     display: block; 
-    padding-bottom:35vh;
+    padding-bottom:5vh;
     
 }
 h5{
@@ -38,44 +38,21 @@ h5{
     text-align: center;
     display: block; 
 }
-.nav
+
+.img1
 {
-    
-    background-color: #383838da; 
-    padding: 0px; 
-    text-align: center; 
-    height: 6vh;
-    left:0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0; /* Setze den äußeren Rand auf 0 */
-    position: fixed; /* Fixiere die Navigationsleiste oben auf dem Bildschirm */
-    top: 0; /* Abstand vom oberen Rand des Bildschirms auf 0 setzen */
-    width: 100%; 
-    z-index: 1000;
-    
- }
-nav a
-{
-    color: rgb(170, 169, 169); 
-    text-decoration: none; 
-    margin:1vw ;
+    width: 95%;
     text-align: center;
-    
-    font-size: 1.3em; 
-    opacity: .85;
-    transition: 1s ;
-    font-family:'Cinzel-SemiBold', sans-serif;
-    z-index: 1000;
+    align-items: center;
+   width: 50%;
+   margin: 0 auto;
 }
-nav a:hover
+.text1
 {
-    font-size: 1.4vw; 
-    color: rgb(214, 212, 212); 
-    opacity: 1;
-    text-shadow: 4px 4px 40px rgb(61, 61, 61);
+    font-size: 50px;
+    
 }
+
 ul {
     list-style-type: none;
     margin:0;
