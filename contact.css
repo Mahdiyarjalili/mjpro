@@ -17,14 +17,26 @@ h2{
     
 }
 .absatz{
-    font-family:Lato-Hairline ; font-weight:600;
+    font-family:Lato-Hairline ; 
+    font-weight:600;
     opacity: .8;
     font-size: 2em;
-    line-height: 1.4em;
-    margin-left: .3em;
+    line-height: 1.2vw;
+    margin-left: 5vw;
     display: block; 
-    
-    
+        
+}
+.contact{
+    font-family:Lato-Hairline ; 
+    font-weight:900;
+    opacity: .8;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-left: 5vw;
+    display: block; 
+
+    font-size: 3em;
+    margin-bottom: -1em;
 }
 .gruß
 {
@@ -532,10 +544,22 @@ font-family:Lato-Hairline ; font-weight:600;
     font-family:Lato-Hairline ; font-weight:600;
     opacity: .8;
     font-size: 4em;
-    line-height: 1.4em;
-    margin-left: .3em;
+    line-height: 7vw;
+    margin-left: 5vh;
     display: block; 
     
+}
+.contact{
+    font-family:Lato-Hairline ; 
+    font-weight:900;
+    opacity: .8;
+    
+    line-height: 1.2em;
+    margin-left: 5vw;
+    display: block; 
+
+    font-size: 6em;
+    margin-bottom: -1em;
 }
 .gruß
 {
