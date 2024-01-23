@@ -178,6 +178,7 @@ ul li ul a:hover{
     padding-left: 55px;
 }
 
+
 @font-face {
     font-family: 'Cinzel-SemiBold'; 
     src: url('Fonts/Cinzel-SemiBold.ttf') format('truetype');
@@ -189,6 +190,22 @@ ul li ul a:hover{
 @font-face {
     font-family: 'Lato-Hairline'; 
     src: url('Fonts/Lato-Hairline.ttf') format('truetype');
+         
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight:100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy'; 
+    src: url('Fonts/Gilroy-Light.ttf') format('truetype');
+         
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight:100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rights'; 
+    src: url('Fonts/Cabin-VariableFont_wdth\,wght.ttf') format('truetype');
          
     /* Füge hier weitere Formate hinzu, falls vorhanden */
     font-weight:100;
@@ -265,8 +282,63 @@ body
 }
 
 
+.footer
+{
+text-align: center;
+color: azure;
+height: 9vw;
+margin-top: 20vw;
+padding-top: 2vw;
 
-
+}
+.footerContainer
+{
+    background-color: #3b3b3bb7;
+    width: 100%;
+        bottom:0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+        display: block;
+        position:relative;
+        
+}
+footer a{
+    font-size: .85vw;
+    margin:0 10vw;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.486);
+    transition: all 1.5s;
+    border-bottom: #ffffff;
+    border-style: dashed;
+    border-width: .08vw;
+    border-radius: 1vw;
+    padding: .6vw 3vw;
+   
+}
+footer a:hover{
+    font-size: .9vw;
+    margin:0 10vw;
+    text-decoration: none;
+    color: aliceblue;
+    
+    
+}
+.rights
+{
+    color: rgba(221, 221, 221, 0.849);
+    font-family: Rights;
+    font-size: 1vw;
+    opacity: .7;
+    transition: all 1.5s;
+    padding-top: 3.8vw;
+}
+.rights:hover
+{
+    color: rgba(255, 255, 255, 0.767);
+    font-family: Rights;
+    opacity: 1;
+}
 
 
 
@@ -528,4 +600,82 @@ body
     margin: 20vw; 
 }
 
+
+
+
+.footer
+{
+text-align: center;
+color: azure;
+height: 20vw;
+margin-top: 20vw;
+padding-top: 3vw;
+
+}
+.footerContainer
+{
+    background-color: #3b3b3bb7;
+    width: 100%;
+        bottom:0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+        display: block;
+        position:relative;
+        
+        
+}
+footer a{
+    font-size: 2.9vw;
+    margin:0 5vw;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.486);
+    transition: all 1.5s;
+    border-bottom: #ffffff;
+    border-style: dashed;
+    border-width: .08vw;
+    border-radius: 1vw;
+    padding: .5vw 3vw;
+   
+}
+footer a:hover{
+    font-size: 3vw;
+        text-decoration: none;
+    color: aliceblue;
+    
+    
+}
+.rights
+{
+    color: rgba(221, 221, 221, 0.849);
+    font-family: Rights;
+    font-size: 2.3vw;
+    opacity: .7;
+    transition: all 1.5s;
+    padding-top: 7vw;
+}
+.rights:hover
+{
+    color: rgba(255, 255, 255, 0.767);
+    font-family: Rights;
+    opacity: 1;
+}
+
+
+
+
+
+    }
+    body
+    {
+        overflow:auto;
+        font-size: 1vw; 
+    }
+    body::-webkit-scrollbar {
+        display:none;
+        background-color: #d3010100
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
     }

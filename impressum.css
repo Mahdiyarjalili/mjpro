@@ -186,7 +186,7 @@ padding-top: 2vw;
         
 }
 footer a{
-    font-size: .85vw;
+    font-size: .85em;
     margin:0 10vw;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.486);
@@ -221,6 +221,8 @@ footer a:hover{
     font-family: Rights;
     opacity: 1;
 }
+
+
 
 
 
@@ -357,6 +359,7 @@ ul li ul a:hover{
 }
 
 
+
 @font-face {
     font-family: 'Cinzel-SemiBold'; 
     src: url('Fonts/Cinzel-SemiBold.ttf') format('truetype');
@@ -461,7 +464,7 @@ body
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     body {
       font-size: 1.5vw; 
     }
@@ -478,6 +481,72 @@ body
 
 }
  
+
+h1{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 6vw;
+    text-align: center;
+    display: block; 
+    margin-top: 10vh;
+}
+h2{
+    font-family:Lato-Hairline ;
+     font-weight:600;
+    opacity: .8;
+    margin: 0 4vw;
+    font-size:5vw;
+    text-align: center;
+    display: block; 
+    
+}
+h3{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 4vw;
+    text-align: center;
+    display: block; 
+    
+}
+h4{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 4vw;
+    text-align: center;
+    display: block; 
+    padding-bottom: 6vh;
+    
+}
+h5{
+    font-family:Lato-Hairline ; 
+    opacity: .8;
+    font-size: 10vw;
+    text-align: center;
+    display: block; 
+    margin-top: 5vh;
+}
+
+body::-webkit-scrollbar {
+    display:flex;
+    background-color: #d3010100
+}
+html, body
+{
+    overflow:auto;
+        font-size: 1vw; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
 ul {
     list-style-type: none;
     margin:0 ;
@@ -618,63 +687,6 @@ ul li ul a:hover{
 
 
 }
-
-h1{
-    font-family:Lato-Hairline ; font-weight:600;
-    opacity: .8;
-    font-size: 6vw;
-    text-align: center;
-    display: block; 
-    margin-top: 10vh;
-}
-h2{
-    font-family:Lato-Hairline ;
-     font-weight:600;
-    opacity: .8;
-    margin: 0 4vw;
-    font-size:5vw;
-    text-align: center;
-    display: block; 
-    
-}
-h3{
-    font-family:Lato-Hairline ; font-weight:600;
-    opacity: .8;
-    font-size: 4vw;
-    text-align: center;
-    display: block; 
-    
-}
-h4{
-    font-family:Lato-Hairline ; font-weight:600;
-    opacity: .8;
-    font-size: 4vw;
-    text-align: center;
-    display: block; 
-    padding-bottom: 6vh;
-    
-}
-h5{
-    font-family:Lato-Hairline ; 
-    opacity: .8;
-    font-size: 10vw;
-    text-align: center;
-    display: block; 
-    margin-top: 5vh;
-}
-
-body::-webkit-scrollbar {
-    display:flex;
-    background-color: #d3010100
-}
-html, body
-{
-    overflow:auto;
-        font-size: 1vw; 
-}
-
-
-
 
 
 .newDimension
@@ -863,8 +875,9 @@ footer a:hover{
 
 
 
-}
 
+
+}
 
 body
 {
