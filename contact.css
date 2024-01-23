@@ -273,12 +273,14 @@ body
      {
         text-decoration: none;
          align-items: center;
+         color: #00000091;
          
      }
 .medienContainer
 {
     text-align: center; 
-    margin: 2vw; 
+    margin: 2vw;
+    font-family:Gilroy ;
 }
 
 
@@ -590,7 +592,7 @@ body
      {
         text-decoration: none;
          align-items: center;
-         font-family:'Cinzel-SemiBold', sans-serif;
+         color: #00000091;
          font-size: 5em;
          color: #414141ee;
      }
@@ -598,6 +600,7 @@ body
 {
     text-align: center; 
     margin: 20vw; 
+    font-family:Gilroy ;
 }
 
 
