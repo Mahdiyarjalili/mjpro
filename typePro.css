@@ -38,20 +38,118 @@ h5{
     text-align: center;
     display: block; 
 }
+    
+    .newDimension
+{
+    text-align: center ;
+     font-size: 80px;
+     font-family: Lato-Hairline;
+     margin :0;
+     padding-top: 5vh;
+}
+
+
+.typePro
+    {
+        text-align: center ; font-size: 5vw;font-family: Lato-Hairline;margin :0px;
+    }
 
 .img1
 {
-    width: 95%;
+    
     text-align: center;
     align-items: center;
-   width: 50%;
+   width: 70%;
    margin: 0 auto;
+}
+.text1Head
+{
+    text-align: left ;
+    font-size: 3vw;
+    
 }
 .text1
 {
-    font-size: 50px;
+    text-align: left ;
+    font-size: 2vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top: 5vw;
+    margin: 0px 6vw;
     
 }
+.img2
+{
+    padding-top: 10vh;
+    
+    text-align: center;
+    align-items: center;
+   width: 99%;
+   margin: 0 auto;
+   display: flex;
+}
+.text2
+{
+    text-align: left ;
+    font-size: 2vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top:0vh;
+    margin: 0px 2vw;
+    
+}
+.featuresHead
+{
+    font-family: Gilroy;
+    font-size: 3vw;
+    padding-top: 5vw;
+    margin: 0px 6vw;
+    
+    }
+    .featuresText
+    {
+        text-align: left ;
+        font-size: 2vw;
+        font-family: Gilroy;
+        margin :0;
+        padding-top: 1vw;
+        margin: 0px 6vw;
+        line-height: 3vw;
+    }
+    .img3
+{
+    padding-top: 10vh;
+    
+    text-align: center;
+    align-items: center;
+   width: 89%;
+   margin: 0 auto;
+   display: flex;
+}
+.img4
+{
+    padding-top: 10vh;
+    
+    text-align: center;
+    align-items: center;
+   width: 75%;
+   margin: 0 auto;
+   display: flex;
+}
+.text4
+{
+    text-align: right ;
+    font-size: 1.95vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top:8vh;
+    margin: 0px 0vw;
+    
+}
+
+
+
+
 
 ul {
     list-style-type: none;
@@ -174,10 +272,6 @@ li ul li a{
     width:auto;
 }
 
-body{
-    margin: 0;
-    height: auto;
-}
 ul li ul a:hover{
     opacity: 1;
     font-size: 24px;
@@ -201,6 +295,14 @@ ul li ul a:hover{
 @font-face {
     font-family: 'Lato-Hairline'; 
     src: url('Fonts/Lato-Hairline.ttf') format('truetype');
+         
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight:100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy'; 
+    src: url('Fonts/Gilroy-Light.ttf') format('truetype');
          
     /* Füge hier weitere Formate hinzu, falls vorhanden */
     font-weight:100;
@@ -278,45 +380,11 @@ body
 
 
 
-
-
-
-
 @media screen and (max-width: 1200px) {
     body {
       font-size: 1.5vw; 
     }
-      .nav
-      {
-        background-color: #383838da; 
-        padding: .5vw; 
-        text-align: center; 
-        height: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-       }
-      nav a
-      {
-        color: rgb(170, 169, 169);  
-          text-decoration: none; 
-          margin:3vw ;
-          text-align: center;
-          
-          font-size: 2.8vw; 
-          opacity: .85;
-          transition: 1s ;
-          font-family:'Cinzel-SemiBold', sans-serif;
-          z-index: 1000;
-      }
-      nav a:hover
-{
-    font-size: 3vw; 
-    color: rgb(214, 212, 212); 
-    opacity: 1;
-    text-shadow: 4px 4px 40px rgb(61, 61, 61);
-}
+      
 .logo
 {
     width:130px;
@@ -333,7 +401,7 @@ body
 h1{
     font-family:Lato-Hairline ; font-weight:600;
     opacity: .8;
-    font-size: 10vw;
+    font-size: 6vw;
     text-align: center;
     display: block; 
     margin-top: 10vh;
@@ -342,8 +410,8 @@ h2{
     font-family:Lato-Hairline ;
      font-weight:600;
     opacity: .8;
-    margin: 0 10vw;
-    font-size: 28px;
+    margin: 0 4vw;
+    font-size:5vw;
     text-align: center;
     display: block; 
     
@@ -351,7 +419,7 @@ h2{
 h3{
     font-family:Lato-Hairline ; font-weight:600;
     opacity: .8;
-    font-size: 30px;
+    font-size: 4vw;
     text-align: center;
     display: block; 
     
@@ -362,7 +430,7 @@ h4{
     font-size: 4vw;
     text-align: center;
     display: block; 
-    padding-bottom: 60vh;
+    padding-bottom: 6vh;
     
 }
 h5{
@@ -537,24 +605,128 @@ ul li ul a:hover{
 }
 
 
+.newDimension
+{
+    text-align: center ;
+     font-size: 6vw;
+     font-family: Lato-Hairline;
+     margin :0;
+     padding-top: 5vh;
+}
+
+
+.typePro
+    {
+        text-align: center ; font-size: 9vw;font-family: Lato-Hairline;margin :0px;
+    }
+
+.img1
+{
+    
+    text-align: center;
+    align-items: center;
+   width:80%;
+   margin: 0 auto;
+}
+.text1Head
+{
+    text-align: left ;
+    font-size: 3.5vw;
+    
+}
+.text1
+{
+    text-align: left ;
+    font-size: 2.8vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top: 8vw;
+    margin: 0px 6vw;
+    
+}
+.img2
+{
+    
+    text-align: center;
+    align-items: center;
+   width: 99%;
+   margin: 0 auto;
+   display: flex;
+   margin-top: 5vh;
+   padding-top: 2vh;
+}
+.text2
+{
+    text-align: left ;
+    font-size: 2.5vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top:0vh;
+    margin: 0px 1vw;
+    
+}
+.featuresHead
+{
+    font-family: Gilroy;
+    font-size: 3vw;
+    padding-top: 5vw;
+    margin: 0px 6vw;
+    
+    }
+    .featuresText
+    {
+        text-align: left ;
+        font-size: 2.8vw;
+        font-family: Gilroy;
+        margin :0;
+        padding-top: 1vw;
+        margin: 0px 6vw;
+        line-height: 3.9vw;
+    }
+    .img3
+{
+    padding-top: 4vh;
+    
+    text-align: center;
+    align-items: center;
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+}
+.img4
+{
+    padding-top:3.9vh;
+    
+    text-align: center;
+    align-items: center;
+   width: 88%;
+   margin: 0 auto;
+   display: flex;
+}
+.text4
+{
+    text-align: right ;
+    font-size: 2.2vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top:3vh;
+    margin: 0px 0vw;
+    
+}
 
 
 
 
 
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+body
+{
+    overflow:auto;
+    font-size: 1vw; 
+}
+body::-webkit-scrollbar {
+    display:none;
+    background-color: #d3010100
 }

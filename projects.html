@@ -7,54 +7,7 @@
     <link rel="shortcut icon" href="Icon.ico" />
 
     <title>MJ Production</title>
-    <script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth<1200)) {
-                  }
-        else{
-          
-          const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
-        let isScrolling = false;
-
-        window.addEventListener('wheel', function(event) {
-            if (!isScrolling) {
-                isScrolling = true;
-
-                // Berechne die neue Scrollposition
-                const currentScroll = window.scrollY;
-                const scrollAmount = (window.innerHeight / 100) * scrollAmountPercentage;
-                let targetScroll;
-
-                if (event.deltaY > 0) {
-                    targetScroll = Math.min(currentScroll + scrollAmount, document.body.clientHeight - window.innerHeight);
-                } else {
-                    targetScroll = Math.max(currentScroll - scrollAmount, 0);
-                }
-
-                // Scrolle zur neuen Position mit Smooth-Transition
-                window.scrollTo({
-                    top: targetScroll,
-                    behavior: 'smooth'
-                });
-
-                // Setze Timeout, um das erneute Scrollen zu ermöglichen
-                setTimeout(() => {
-                    isScrolling = false;
-                }, 1000); // Wartezeit in Millisekunden
-            }
-
-            // Verhindere das natürliche Scrollen
-            event.preventDefault();
-        });
-        }
-      </script>
-    
-
-
-      <style>
-        body {
-            height:auto /* Erzeugt genügend Platz zum Scrollen */
-        }
-    </style>
+        
 
 
       
@@ -62,7 +15,7 @@
 </head>
 
 <body background="Bilder/Ergebnis.jpg" class="background">
-  
+  <img src="Bilder/Logo.png" class="logo" >
 
     <div id="prog" style=" left:0px; bottom:0px; position: fixed; width: 100%; background-color: #ffffff; z-index: 99999; height: 100%; overflow: hidden;"> 
         <img style="  
@@ -74,17 +27,7 @@
     display: block;
         "  src="PreLoad.gif" alt="Ein animiertes GIF"> </div>
 
-    
-
-        <!--<nav class="nav">
-        <a href="index.html">home page</a>
-        <a href="aboutUs.html">about us</a>
-        <a href="projects.html">projects</a>
-        <a href="contact.html">contact</a>
-    </nav>-->
-
-
-<div class="menudiv">
+    <div class="menudiv">
 <ul>
  <li><a href="index.html">home page</a></li>
  <li><a href="aboutUs.html">about us</a></li>
@@ -99,32 +42,17 @@
 
 </li>
  <li><a href="contact.html">contact</a></li>
- 
-
-
-</ul>
-
+ </ul>
 </div>
 
 
 
 
 
-
-
-
-
-
-
-
-    <img src="Bilder/Logo.png" class="logo" >
-    <a href="https://google.com"></a>
-    <br>
-    <br>
-
+    
    
     <h1>
-      MJ Production </h1>
+      MJ Production Projects</h1>
       <h2>welcome to our site</h2>
     <h2><br>Our projects within the framework
        of data protection laws will soon be available for download on this website<h2>

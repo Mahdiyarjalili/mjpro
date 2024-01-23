@@ -4,7 +4,7 @@ h1{
     font-size: 5em;
     text-align: center;
     display: block; 
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 h2{
     font-family:Lato-Hairline ; 
@@ -32,11 +32,7 @@ h2{
      font-family:Lato-Hairline ;
      font-size: 2em ;
      font-weight:600;
-      line-height: 1em;
-      padding-bottom: 20vh;
-      position: sticky;
-      top: 70%;
-      left: 50%;
+      line-height: 1.4em
 }
 h3{
     font-family:Lato-Hairline ; font-weight:600;
@@ -55,44 +51,133 @@ h4{
     padding-bottom: 50vh;
     
 }
-.nav
-{
-    
-    background-color: #383838da; 
-    padding: 0px; 
-    text-align: center; 
-    height: 6vh;
-    left:0px;
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    background-color: #3b3b3bb7;
+    /*overflow: hidden;*/
+   /* position: fixed;*/
+    top:0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 75px;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0; /* Setze den äußeren Rand auf 0 */
-    position: fixed; /* Fixiere die Navigationsleiste oben auf dem Bildschirm */
-    top: 0; /* Abstand vom oberen Rand des Bildschirms auf 0 setzen */
-    width: 100%; 
+    z-index: 1000;
+   
+}
+li{
+    
+    
+    display: block;
+    height: 75px;
+    
+    text-align: center;
+    font-size: 25px;
+    z-index: 1000;
+    font-family:Cinzel-SemiBold ;
+    
+    
+    
+
+}
+li a
+{
+    text-decoration:none;
+    color: rgb(209, 209, 209);
+    display: block;
+    padding: 15px 60px;
+    z-index: 1000;
+    height: 45px ;
+    opacity: .5;
+    transition: all 1s;
+    
+       
+}
+li a:hover
+{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #29000000;
+    z-index: 1000;
+    opacity: 1;
+    
+}
+.menudiv
+{
+    
+    float:left;
     z-index: 1000;
     
- }
-nav a
+    
+}
+li ul{
+display: none;
+height: 150px;
+width: 230px;
+
+
+
+}
+
+li:hover > ul 
 {
-    color: rgb(170, 169, 169); 
-    text-decoration: none; 
-    margin:1vw ;
+    display:block;
+    position: relative;
+    z-index: 1000;
+    padding-left: 0;
     text-align: center;
     
-    font-size: 1.25vw; 
-    opacity: .85;
-    transition: 1s ;
-    font-family:'Cinzel-SemiBold', sans-serif;
-    z-index: 1000;
+
 }
-nav a:hover
+
+li ul li
 {
-    font-size: 1.4vw; 
-    color: rgb(214, 212, 212); 
-    opacity: 1;
-    text-shadow: 4px 4px 40px rgb(61, 61, 61);
+    
+    color: rgba(255, 13, 13, 0)  ;
+    z-index: 1000;
+    width: 150px;
+   float: none;
+    display:block;
+    text-align: center;
+  
+    
+    font-size: 20px;
 }
+
+
+li ul li:hover
+{
+    
+    background-color: #ff000000;
+    display: block;
+width: auto;
+text-align: center;
+
+
+}
+
+li ul li a{
+   
+    display: block;
+    position:fixed;
+    text-align:center;
+    align-items: center;
+   padding-left: 65px;
+    
+    width:auto;
+}
+ul li ul a:hover{
+    opacity: 1;
+    font-size: 24px;
+    margin-right: 50px;
+    padding-left: 55px;
+}
+
 @font-face {
     font-family: 'Cinzel-SemiBold'; 
     src: url('Fonts/Cinzel-SemiBold.ttf') format('truetype');
@@ -152,16 +237,9 @@ body
   }
   .contactContainer
 {
-    position:sticky;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    top: 40%;
-  left: 50%;
-  bottom: 60%;
-  left: 50%;
-     
-    
      
      }
      
@@ -176,7 +254,6 @@ body
      }
      .logoMedienLinks
      {
-        color: #414141ee;
         text-decoration: none;
          align-items: center;
          
@@ -197,42 +274,147 @@ body
 
 
 
-@media screen and (max-width: 1200px) {
- .nav
-      {
-        background-color: #383838da; 
-        padding: .5vw; 
-        text-align: center; 
-        height: 5vw;
+@media screen and (max-width: 1000px) {
+    ul {
+        list-style-type: none;
+        margin:0 ;
+        padding:5px ;
+        padding-left: 1px;
+        background-color: #3b3b3bb7;
+        /*overflow: hidden;*/
+       /* position: fixed;*/
+       
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        position: fixed;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 1000;
-       }
-
-
-      nav a
-      {
-        color: rgb(170, 169, 169);  
-          text-decoration: none; 
-          margin:1vw ;
-          text-align: center;
-          
-          font-size: 2.8vw; 
-          opacity: .85;
-          transition: 1s ;
-          font-family:'Cinzel-SemiBold', sans-serif;
-          z-index: 1000;
-      }
-
-
-nav a:hover
-{
-    font-size: 3vw; 
-    color: rgb(214, 212, 212); 
-    opacity: 1;
-    text-shadow: 4px 4px 40px rgb(61, 61, 61);
-}
+       padding-bottom: 11px;
+    }
+    li{
+        
+        
+        display: block;
+        height: 50px;
+        background-color: #ff000000;
+        text-align: center;
+        font-size: 3vw;
+        z-index: 1000;
+        font-family:Cinzel-SemiBold ;
+        
+    
+    
+    }
+    li a
+    {
+        text-decoration:none;
+        color: rgb(209, 209, 209);
+        display: block;
+        
+        padding-top: 200x;
+        padding-left: 5vw;
+        padding-right: 20px;
+        z-index: 1000;
+        height: 36px ;
+        opacity: .5;
+        transition: all 1s;
+        
+           
+    }
+    li a:hover
+    {
+        font-size: 1.1em;
+        color: rgb(255, 255, 255);
+        background-color: #29000000;
+        z-index: 1000;
+        opacity: 1;
+        
+    }
+    .menudiv
+    {
+        
+        float:left;
+        z-index: 1000;
+        
+        
+    }
+    
+    
+    li ul{
+    display: none;
+    height: 90px;
+    width: 75px;
+    margin-left: 10px;
+    
+    
+    }
+    
+    li:hover > ul 
+    {
+        display:block;
+        position: relative;
+        z-index: 1000;
+        padding-left: 0;
+        text-align: center;
+        
+    }
+    
+    li ul li
+    {
+        
+        color: rgba(160, 9, 9, 0.87)  ;
+        background-color: #041cf000;
+        z-index: 1000;
+        width: 65px;
+       float: none;
+        display:block;
+        text-align: center;
+      height: 40px;
+      padding-bottom: 10px;
+      padding-left: 3px;
+      padding-right: 2vw;
+      
+      text-align: center;
+        
+        font-size: 13px;
+    }
+    
+    
+    li ul li:hover
+    {
+        
+        background-color: #ff000000;
+        display: block;
+    width: auto;
+    text-align: center;
+    
+    
+    }
+    
+    li ul li a{
+       
+        display: block;
+        position:fixed;
+        text-align:center;
+        align-items: center;
+       padding-left: 0;
+        transition: all 2s;
+        opacity: .7;
+        width:auto;
+    }
+    ul li ul a:hover{
+        opacity: 1;
+        font-size: 13px;
+       
+        padding-left: 0px;
+        padding-right: 0px;
+        
+    
+    
+    }
 
 
 .logo
@@ -247,7 +429,6 @@ nav a:hover
 
 }
  
-
 
 body::-webkit-scrollbar {
     display: none;
@@ -284,15 +465,11 @@ font-family:Lato-Hairline ; font-weight:600;
 }
 .gruß
 {
-    
+    text-align: center;
      font-family:Lato-Hairline ;
      font-size: 4em ;
      font-weight:600;
-      line-height: 1em;
-      
-      
-      
-    
+      line-height: 1.4em
 }
 
 h3{
@@ -317,7 +494,7 @@ h4{
 body
 {
     overflow:auto;
-        font-size: 1vw; 
+         
 }
 
 .contactContainer
@@ -325,24 +502,23 @@ body
     display:block;
     justify-content: center;
     align-items: center;
-         
+     
      }
      
      .logoMedienPic
      {
-        width: 25vw;
+        width: 45vw;
         transition: 1s ;
      }
      .logoMedienPic:hover
      {
-        width: 30vw;
+        width: 50vw;
      }
      .logoMedienLinks
      {
         text-decoration: none;
          align-items: center;
-         font-family:Lato-Hairline ;
-         font-weight:900;
+         font-family:'Cinzel-SemiBold', sans-serif;
          font-size: 5em;
          color: #414141ee;
      }

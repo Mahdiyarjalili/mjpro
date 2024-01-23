@@ -5,59 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
     <title>MJ Production</title>
-    <script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)||(window.innerWidth<1200)) {
-        }
-        else{
-          const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
-        let isScrolling = false;
-
-        window.addEventListener('wheel', function(event) {
-            if (!isScrolling) {
-                isScrolling = true;
-
-                // Berechne die neue Scrollposition
-                const currentScroll = window.scrollY;
-                const scrollAmount = (window.innerHeight / 100) * scrollAmountPercentage;
-                let targetScroll;
-
-                if (event.deltaY > 0) {
-                    targetScroll = Math.min(currentScroll + scrollAmount, document.body.clientHeight - window.innerHeight);
-                } else {
-                    targetScroll = Math.max(currentScroll - scrollAmount, 0);
-                }
-
-                // Scrolle zur neuen Position mit Smooth-Transition
-                window.scrollTo({
-                    top: targetScroll,
-                    behavior: 'smooth'
-                });
-
-                // Setze Timeout, um das erneute Scrollen zu ermöglichen
-                setTimeout(() => {
-                    isScrolling = false;
-                }, 1000); // Wartezeit in Millisekunden
-            }
-
-            // Verhindere das natürliche Scrollen
-            event.preventDefault();
-        });
-        }
-      </script>
+    
       
 
 
-      <style>
-        body {
-            height:300vh; /* Erzeugt genügend Platz zum Scrollen */
-                    }
-    </style>
+    
 
 </head>
 <!--<div class="fade-in">-->
 <body background="Bilder/Ergebnis.jpg" class="background">
   
-
+  <img src="Bilder/Logo.png" class="logo" >
     <div id="prog" style=" left:0px; bottom:0px; position: fixed; width: 100%; background-color: #ffffff; z-index: 99999; height: 100%; overflow: hidden;"> 
         <img style="  
     width:20vhw;
@@ -70,16 +28,28 @@
 
     
 
-        <nav class="nav">
-          <a href="index.html">home page</a>
-          <a href="aboutUs.html">about us</a>
-          <a href="projects.html">projects</a>
-          <a href="contact.html">contact</a>
-    </nav>
-    <img src="Bilder/Logo.png" class="logo" >
-    <a href="https://google.com"></a>
-    <br>
-    <br>
+<div class="menudiv">
+  <ul>
+   <li><a href="index.html">home page</a></li>
+   <li><a href="aboutUs.html">about us</a></li>
+   <li><a href="projects.html">projects</a>
+  
+    <ul>
+     <li><a href="index.html"> &nbsp Type Pro</a></li>
+     <li><a href="aboutUs.html">Ping Pong</a></li>
+     
+    </ul>
+  
+  
+  </li>
+   <li><a href="contact.html">contact</a></li>
+   
+  
+  
+  </ul>
+  
+  </div>
+    
 
    
     <h1>MJ Production </h1>

@@ -7,64 +7,9 @@
     <link rel="shortcut icon" href="Icon.ico" />
 
     <title>MJ Production</title>
-    <script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth<1200)) {
-                  }
-        else{
-          
-          const scrollAmountPercentage = 100; // Ändere dies auf den gewünschten Prozentsatz
-        let isScrolling = false;
-
-        window.addEventListener('wheel', function(event) {
-            if (!isScrolling) {
-                isScrolling = true;
-
-                // Berechne die neue Scrollposition
-                const currentScroll = window.scrollY;
-                const scrollAmount = (window.innerHeight / 100) * scrollAmountPercentage;
-                let targetScroll;
-
-                if (event.deltaY > 0) {
-                    targetScroll = Math.min(currentScroll + scrollAmount, document.body.clientHeight - window.innerHeight);
-                } else {
-                    targetScroll = Math.max(currentScroll - scrollAmount, 0);
-                }
-
-                // Scrolle zur neuen Position mit Smooth-Transition
-                window.scrollTo({
-                    top: targetScroll,
-                    behavior: 'smooth'
-                });
-
-                // Setze Timeout, um das erneute Scrollen zu ermöglichen
-                setTimeout(() => {
-                    isScrolling = false;
-                }, 1000); // Wartezeit in Millisekunden
-            }
-
-            // Verhindere das natürliche Scrollen
-            event.preventDefault();
-        });
-        }
-      </script>
-      
-
-
-      <style>
-        body {
-            height:200vw; /* Erzeugt genügend Platz zum Scrollen */
-        }
-    </style>
-
-
-      
-
-</head>
-
+   </head>
 <body background="Bilder/Ergebnis.jpg" class="background">
-  
-
-    <div id="prog" style=" left:0px; bottom:0px; position: fixed; width: 100%; background-color: #ffffff; z-index: 99999; height: 100%; overflow: hidden;"> 
+      <div id="prog" style=" left:0px; bottom:0px; position: fixed; width: 100%; background-color: #ffffff; z-index: 99999; height: 100%; overflow: hidden;"> 
         <img style="  
     width:20vhw;
     left: 0;
@@ -73,16 +18,6 @@
     margin-top: 35vh;
     display: block;
         "  src="PreLoad.gif" alt="Ein animiertes GIF"> </div>
-
-    
-
-        <!--<nav class="nav">
-        <a href="index.html">home page</a>
-        <a href="aboutUs.html">about us</a>
-        <a href="projects.html">projects</a>
-        <a href="contact.html">contact</a>
-    </nav>-->
-
 
 <div class="menudiv">
 <ul>
@@ -107,7 +42,6 @@
 </div>
 
 
-
     <img src="Bilder/Logo.png" class="logo" >
     <a href="https://google.com"></a>
     <br>
@@ -115,23 +49,72 @@
 
    
     <h1>MJ Production Projects </h1>
+    
       <h2>Type Pro v 1.0</h2>
     <h2><br>Our projects within the framework
        of data protection laws will soon be available for download on this website<h2>
      <h3><br> <br>If you have any questions or opinions, you can click Contact Us and
        reach out to us</h3>
     <h4>We warmly welcome your ideas and opinions </h4>
-    <p style="text-align: center ; font-size: 150px;font-family: Lato-Hairline;margin :0;padding-top: 120px">new dimension </p>
-    <p style="text-align: center ; font-size: 150px;font-family: Lato-Hairline;margin :0px;">type pro v1.0 </p>
-    
-    
-    <div class="img1">   
-    <img src="Projects/TypePro/Foto1.png" class="img1" style="width: 100%;" >
-    
-    </div> 
 
-    <p style="text-align: center ; font-size: 150px;font-family: Lato-Hairline;margin :0;padding-top: 120px">new dimension </p>
-    <p style="text-align: center ; font-size: 150px;font-family: Lato-Hairline;margin :0px;">type pro v1.0 </p>
+
+
+
+
+
+
+    <video src="Projects/TypePro/TYPE PRO 1.0.mp4" style="width: 80%;align-items: center;text-align: center;display: flex;object-fit: cover;margin: auto;"controls>
+
+    </video>
+
+
+
+
+
+
+
+
+    <p class="newDimension">new dimension </p><br>
+    <p class="typePro">TYPE PRO v1.0 </p>
+    <br><br>
+    <div class="img1">   
+    <img src="Projects/TypePro/Foto1.png" class="img1" >
+        </div> 
+        <p class="text1"><span class="text1Head">We hereby introduce Type Pero version one,</span><br>
+          complex texts with very complex words were integrated
+          To challenge the user's reaction speed, the app refers to advanced 10 fingers
+           System writers </p><br><br>
+           
+           <div class="img2">   
+            <img src="Projects/TypePro/Foto2.png" class="img1" >
+            <p class="text2">A friendly and beautiful graphical user interface
+               has been created, giving you a general overview of the app </p>
+                </div> 
+
+                <P class="featuresHead">Important features</P>
+                <p class="featuresText">1.  Hundreds of very complex texts with complex words were integrated
+                  <br>2. The lyrics are on different topics so you don't get bored with one.
+                  <br>3. For those who want to write faster and faster and want to train this is the best choice.
+                  <br>4. At the end it will automatically show how fast you wrote (words per minute).</p>
+
+                  <div class="img3">   
+                    <img src="Projects/TypePro/Foto3.png" class="img3" >
+                        </div> 
+                        <p class="text1"><span class="text1Head">important to know,</span><br>
+                          If you are a beginner and want to learn 10 Finger System from the beginning, 
+                          you will probably get bored with this app because Type Pro is not an education app 
+                          but a professional app for legendary 10 Finger System writers </p><br><br>
+
+                          <div class="img4">   
+                            
+                            <p class="text4">Your result will be displayed exactly so that you can see more
+                               precisely how far you have progressed. Quite elegantly, your result is
+                                automatically output in the usual unit of words per minute. </p>
+                               <img src="Projects/TypePro/Foto4.png" class="img4" >
+                                </div>
+
+                                
+   
     
 
     
